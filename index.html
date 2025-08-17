@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Gamer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background-color: #0d0d0d;
+            color: #fff;
+        }
+        header {
+            background: linear-gradient(90deg, #ff0000, #ff4d4d);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff0000;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #ff4d4d;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .videos, .dicas, .acessorios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .social a {
+            margin: 0 10px;
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site Gamer</h1>
+    </header>
+
+    <nav>
+        <a href="#videos">Vídeos</a>
+        <a href="#dicas">Dicas</a>
+        <a href="#acessorios">Acessórios</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="videos">
+        <h2>Meus Gameplays</h2>
+        <div class="videos">
+            <div class="card">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/seu_video1" frameborder="0" allowfullscreen></iframe>
+                <p>Dica de gameplay 1</p>
+            </div>
+            <div class="card">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/seu_video2" frameborder="0" allowfullscreen></iframe>
+                <p>Dica de gameplay 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dicas">
+        <h2>Dicas de PUBG</h2>
+        <div class="dicas">
+            <div class="card">
+                <h3>Dica 1</h3>
+                <p>Como melhorar a mira usando giroscópio no celular.</p>
+            </div>
+            <div class="card">
+                <h3>Dica 2</h3>
+                <p>Escolha das melhores armas e acessórios para M416.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="acessorios">
+        <h2>Acessórios Gamer</h2>
+        <div class="acessorios">
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150.png?text=Luva+Gamer" alt="Luva Gamer">
+                <p>Luva Gamer - Conforto e precisão</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150.png?text=Fone+de+Ouvido" alt="Fone de Ouvido">
+                <p>Fone de Ouvido - Som imersivo</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato e Redes Sociais</h2>
+        <p>Me siga nas redes:</p>
+        <div class="social">
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Meu Site Gamer</p>
+    </footer>
+
+</body>
+</html>
